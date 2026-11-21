@@ -2,7 +2,7 @@
 // Sem dependências: precisa só do Node 18 ou mais novo.   Rodar:  node server.js
 const http = require('http'), fs = require('fs'), path = require('path'), crypto = require('crypto');
 const PORT = +process.env.PORT || 3000;
-const ROOT = path.join(__dirname, 'public');
+const ROOT = __dirname;
 const MAX_PLAYERS = 3, MAX_ROOMS = 500, TICK_MS = 100, MAX_MSG = 4096, MAX_PRES = 1800, MAX_MSGS_PER_SEC = 40;
 const GUID = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11';
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json',
